@@ -1,0 +1,20 @@
+<html>
+<script lang="javascript">
+    function rectangle()
+    {
+        var length=document.getElementById("t1").value;
+        var breadth=document.getElementById("t2").value;
+        var ans = length*breadth;
+    document.getElementById("res").innerHTML="area of rectangle="+ans;
+    }
+    </script>
+    <form name="f1">
+        enter length:<input type="text" id="t1"/>
+        <br><br>
+        enter breadth:<input type="text" id="t2"/>
+        <br><br>
+        <input type="button" value="result" onclick="rectangle();"/>
+        <br><br>
+        <span id="res">------</span>
+    </form>
+</html>
