@@ -1,0 +1,26 @@
+<html>
+<script lang="javascript">
+    {
+        var num1=document.getElementById("t1").value;
+        var num2=document.getElementById("t2").value;
+        if(num1==num2)
+        {
+            document.getElementById("res").innerHTML="both are equal"
+        }
+        else if(num1>=num2)
+        {
+            document.getElementById("res").innerHTML="the greater number"+num1;
+        }
+        else
+        {
+            document.getElementById("res").innerHTML="the greater number"+num2;
+        }
+    }
+    </script>
+    <form name="f1">
+        enter number1=<input type="text" name="t1"/><br><br>
+        enter number2=<input type="text" name="t2"/><br><br>
+        <input type="button" value="ok" onclick="check();"/><br><br>
+        <span id="res">-----</span>
+    </form>
+</html>

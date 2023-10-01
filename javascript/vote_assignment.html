@@ -1,0 +1,23 @@
+<html>
+    <form name="f1">
+        <input type="tex" id="t1"/><br><br>
+        <input type="button" value="ok" onclick="check();"/><br><br>
+        <span id="res">-----</span>
+    </form>
+    <script lang="javascript">
+        function check()
+        {
+            var age= document.getElementsByName("t1").value;
+            if(age>=18)
+            {
+                document.getElementById("res").innerHTML="eligibele to vote";
+            }
+            else
+            {
+                document.getElementById("res").innerHTML="not eligible to vote";
+
+
+            }
+        }
+        </script>
+</html>
