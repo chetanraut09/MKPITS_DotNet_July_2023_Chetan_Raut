@@ -1,0 +1,19 @@
+<form>
+enter number:<input type="text" id="t1"/><br><br>
+<button type="button" onclick="display();">ok</button>
+<span id="result">---</span>
+</form>
+<script lang="javascript">
+    function display()
+    {
+        var num=parseInt(document.getElementById("t1").value);
+        if(num%2==0)
+        {
+            document.getElementById("result").innerHTML="number is even";
+        }
+        else
+        {
+            document.getElementById("result").innerHTML="number is odd";
+        }
+    }
+    </script>
