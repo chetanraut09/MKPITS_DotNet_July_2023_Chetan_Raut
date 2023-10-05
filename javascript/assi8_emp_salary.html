@@ -1,0 +1,40 @@
+<html>
+<script language="javascript">
+function cal()
+{
+var empname=document.getElementById("t1").value;
+var basicsal=document.getElementById("t2").value;
+var designation=document.getElementById("t3").value;
+document.getElementById("name").innerHTML=empname;
+if(designation=="maneger")
+{
+var bonus=5000;
+totalsal=parseInt(basicsal)+parseInt(bonus);
+document.getElementById("salary").innerHTML=+totalsal;
+document.getElementById("bonus").innerHTML=+bonus;
+}
+else if(designation=="clerk")
+{
+var bonus=2000;
+totalsal=parseInt(basicsal)+parseInt(bonus);
+document.getElementById("salary").innerHTML=+totalsal;
+document.getElementById("bonus").innerHTML=+bonus;
+}
+else
+{
+var bonus=1000;
+totalsal=parseInt(basicsal)+parseInt(bonus);
+document.getElementById("salary").innerHTML=+totalsal;
+document.getElementById("bonus").innerHTML=+bonus;
+}
+}</script>
+<form>
+enter employee name <input type=text id="t1" /> <br><br>
+enter basic salary <input type=text id="t2" /> <br><br>
+enter designation <input type=text id="t3" /> <br><br>
+<button type=button onclick="cal()" >result </button><br><br>
+employee name : <span id="name" ></span><br><br>
+totalsal : <span id="salary" > </span><br><br>
+bonus: <span id="bonus" ></span><br>
+</form>
+</html>

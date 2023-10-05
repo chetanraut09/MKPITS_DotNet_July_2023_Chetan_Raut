@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept product-name , product-rate , quantity then calculate total amount</title>
+    
+</head>
+
+<script lang="javascript">
+    function calculate()
+    {
+        var name=document.getElementById("pname").value;
+        document.getElementById("product").innerHTML="Product: " + name;
+
+        var rate=parseFloat(document.getElementById("prate").value);
+        document.getElementById("rt").innerHTML="Rate: " + rate + ". Rs";
+
+        var Quantity=parseFloat(document.getElementById("quantity").value);
+        document.getElementById("quant").innerHTML="Quantity: " + Quantity + " Kg";
+
+        var Total = rate * Quantity;
+        document.getElementById("total").innerHTML="Total: " + Total + ". Rs";
+
+    }
+</script>
+<body>
+    <h2>Accept product-name , product-rate , quantity then calculate total amount</h2><hr><br>
+
+    <form>
+        Product Name: <input type="text" id="pname"><br><br>
+        Product Rate / Kg: <input type="text" id="prate"><br><br>
+        Quantity (Kg): <input type="text" id="quantity"><br><br>
+
+        <button type="button" onclick="calculate()">Submit</button><br><br>
+        <span id="product"></span><br>
+        <span id="rt"></span><br>
+        <span id="quant"></span><br>
+        <span id="total"></span>
+        
+    </form>
+</body>
+</html>

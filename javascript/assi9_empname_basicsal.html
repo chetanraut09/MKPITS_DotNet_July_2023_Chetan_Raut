@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept empname and basicsalary
+        calculate hra ie 23% of basicsalary, da ie 43% of basic salary
+        then calculate total salary =hra+da+basicsalary
+        </title>
+        
+</head>
+
+<script lang="javascript">
+
+function ok()
+{
+    var a=23;
+    var b=43;
+
+    var name=document.getElementById("empname").value;
+    document.getElementById("ename").innerHTML="Employee Name: " + name;
+
+    var sal=parseFloat(document.getElementById("salary").value);
+    document.getElementById("basicsal").innerHTML="Basic Salary: " + sal;
+
+    if(a==23 && b==43)
+    {
+        var HRA = parseFloat((sal*a)/100);
+        document.getElementById("hra").innerHTML="HRA: " + HRA;
+
+        var DA = parseFloat((sal*b)/100);
+        document.getElementById("da").innerHTML="DA: " + DA;
+
+        var Total = HRA + DA + sal;
+        document.getElementById("totalsal").innerHTML="Total Salary: " + Total + " .Rs";
+    }
+
+}
+</script>
+<body>
+    <h2>Accept empname and basicsalary
+        calculate hra ie 23% of basicsalary, da ie 43% of basic salary
+        then calculate total salary =hra+da+basicsalary
+        </h2><hr><br>
+
+        <form>
+
+            Enter employee name: <input type="text" id="empname"><br><br>
+            Enter Salary: <input type="text" id="salary"><br><br>
+
+            <button type="button" onclick="ok()">Submit</button><br><br>
+            <span id="ename"></span><br>
+            <span id="basicsal"></span><br>
+            <span id="hra"></span><br>
+            <span id="da"></span><br>
+            <span id="totalsal"></span>
+        </form>
+</body>
+</html>
