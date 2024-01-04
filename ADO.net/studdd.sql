@@ -1,0 +1,7 @@
+SELECT TOP (1000) [rno]
+      ,[name]
+      ,[gender]
+      ,[hobby]
+      ,[city]
+      ,[dob]
+  FROM [studdd].[dbo].[studdd]

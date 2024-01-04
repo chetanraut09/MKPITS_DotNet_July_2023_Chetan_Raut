@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace studdd
+namespace ass1_connected_en
 {
     internal static class Program
     {
